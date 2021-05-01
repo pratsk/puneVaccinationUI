@@ -1,0 +1,206 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  line-height: 1.42em;
+  color: #111;
+}
+
+h1 {
+  text-align: center;
+  color: #4dc3fa;
+}
+
+h2 {
+  font-size: 1em;
+  font-weight: 300;
+  text-align: center;
+  display: block;
+  line-height: 1em;
+  padding-bottom: 2em;
+  color: #fb667a;
+}
+
+h2 a {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fb667a;
+  text-decoration: none;
+}
+
+.blue {
+  color: #185875;
+}
+
+.yellow {
+  color: #fff842;
+}
+
+.my-1{
+    margin-top:1px;
+    margin-bottom:1px;
+}
+
+.container th h1 {
+  font-weight: bold;
+  font-size: 1em;
+  text-align: left;
+  color: #185875;
+  display: inline-block;
+}
+
+.container td {
+  font-weight: normal;
+  font-size: 1em;
+  -webkit-box-shadow: 0 2px 2px -2px #0e1119;
+  -moz-box-shadow: 0 2px 2px -2px #0e1119;
+  box-shadow: 0 2px 2px -2px #0e1119;
+}
+
+.container {
+  text-align: left;
+  overflow: hidden;
+  width: 80%;
+  margin: 0 auto;
+  display: table;
+}
+
+.container td {
+  text-align:center;
+}
+
+/* Background-color of the odd rows */
+
+.container tr:nth-child(odd) {
+  background-color: #eee;
+}
+
+/* Background-color of the even rows */
+
+.container tr:nth-child(even) {
+  background-color: #ccc;
+}
+
+.container th {
+  background-color: #ccc;
+  cursor: pointer;
+  color: #000;
+  position: relative;
+  text-align:center;
+}
+.container td:first-child {
+  color: #111;
+  padding-left:1%;
+  text-align:left;
+}
+
+.container tr:hover {
+  background-color: #aaa;
+  -webkit-box-shadow: 0 6px 6px -6px #0e1119;
+  -moz-box-shadow: 0 6px 6px -6px #0e1119;
+  box-shadow: 0 6px 6px -6px #0e1119;
+}
+
+.container td:hover {
+  background-color: #edf3f4;
+  color: #403e10;
+  /*   font-weight: bold; */
+  /*   box-shadow: #7F7C21 -1px 1px, #7F7C21 -2px 2px, #7F7C21 -3px 3px, #7F7C21 -4px 4px, #7F7C21 -5px 5px, #7F7C21 -6px 6px;
+  transform: translate3d(6px, -6px, 0);
+
+  transition-delay: 0s;
+	  transition-duration: 0.4s;
+	  transition-property: all;
+  transition-timing-function: line; */
+}
+td.action,
+td.action {
+  padding: 0;
+}
+.action button {
+  width: 50%;
+  height: 24px;
+  float: left;
+  color: #fff;
+  border: 0;
+  cursor: pointer;
+}
+button.del {
+  background-color: #464a52;
+}
+button.edit {
+  background-color: #696b6f;
+}
+button.del:hover {
+  background-color: #e25d6f;
+}
+button.edit:hover {
+  background-color: #2e939c;
+}
+.tac {
+  text-align: center;
+}
+table {
+  margin: 20px auto !important;
+}
+table.desktop {
+  display: none;
+}
+@media screen and (min-width: 991px) {
+  table.desktop {
+    display: table;
+  }
+  table.mobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  /* custom owl carousel css */
+  .owl-carousel .owl-dots.disabled{
+    display: block !important;
+  }
+  .owl-nav > button {
+    position: absolute;
+    top: 0;
+    color: #ffffff;
+    height: 100%;
+    padding: 0 30px !important;
+    background-repeat: repeat-x;
+    outline: 0;
+  }
+  .owl-nav i {
+    font-size: 52px;
+  }
+
+  .owl-nav .owl-prev {
+    left: 0;
+  }
+
+  .owl-nav .owl-next {
+    right: 0;
+    left: auto;
+  }
+  .owl-dots {
+    text-align: center;
+  }
+  .owl-dots button {
+    width: 10px;
+    height: 10px;
+    margin: 0 2px;
+    border-radius: 50%;
+    background: #fff !important;
+    outline: 0;
+  }
+  .owl-dots button:hover,
+  .owl-dots button:focus,
+  .owl-dots button.active {
+    background: rgb(255, 248, 66) !important;
+  }
+  /* custom owl carousel css ends */
+  .container th{
+    cursor: move;
+  }
+}
+
