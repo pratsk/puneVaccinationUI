@@ -2,13 +2,23 @@
 <html>
 <head>
     <title>Pune Vaccination Center</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css"/>
     <script src="js/jquery.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/script.js"></script>
 </head>
     <body>
         <h1><span class="blue"></span>Pune Vaccination Center<span class="blue"></span></h1>
+        <div class="text-center">
+            <label for="picode">Pincode</label>
+            <input type="text" name="pincode" id="pincode"  maxlength="6" value="" autocomplete="off"/>
+
+            <label for="picode">Date</label>
+            <input type="date" name="date" id="date"  value="" autocomplete="off"/>
+
+            <input id="searchButton" type="button" value="Search" autocomplete="off" disabled/>
+            <input id="clearButton" type="button" value="Clear"/>
+        </div>
         <div id="centerList"></div>
     </body>
 </html>

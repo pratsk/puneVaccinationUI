@@ -147,6 +147,19 @@ table {
 table.desktop {
   display: none;
 }
+
+#searchButton,#clearButton{
+  padding: 4px 15px;
+  font-weight: bold;
+  border: 1px solid;
+  background: #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.text-center{
+  text-align: center;
+}
+
 @media screen and (min-width: 991px) {
   table.desktop {
     display: table;
