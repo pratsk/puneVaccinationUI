@@ -46,6 +46,9 @@ h2 a {
     margin-top:1px;
     margin-bottom:1px;
 }
+.font-weight-normal{
+  font-weight: normal;
+}
 
 .container th h1 {
   font-weight: bold;

@@ -74,7 +74,7 @@ function createCenterListForSearchResult(centerList){
             "<p class='my-1'> <span>"+ centerList[i].block_name +"-<span>"+
             "<span>"+ centerList[i].pincode +"</span></p>" +
             "<p class='my-1'> <span>"+ centerList[i].fee_type +"<span>"+
-            "<span class='text-small color-red'> Age "+ centerList[i].min_age_limit +" +</span></p>" +
+            "<span class='text-small color-red'> (Age "+ centerList[i].min_age_limit +"+)</span></p>" +
         "</div></td>" +
           "<td><div>"+
             "<p class='my-1'>"+ centerList[i].date +"</p>"+
@@ -105,7 +105,7 @@ function createCenterListForSearchResult(centerList){
               "<p class='my-1'> <span>"+ centerList[i].block_name +"-<span>"+
               "<span>"+ centerList[i].pincode +"</span></p>" +
               "<p class='my-1'> <span>"+ centerList[i].fee_type +"<span>"+
-              "<span class='text-small color-red'> Age "+ centerList[i].min_age_limit +" +</span></p>" +
+              "<span class='font-weight-normal text-small color-red'> (Age "+ centerList[i].min_age_limit +"+)</span></p>" +
             "</div></th></thead>" +
 
             "<tbody>" +
