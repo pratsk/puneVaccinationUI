@@ -18,6 +18,7 @@ function createCenterListFromJson(centerList){
           content += "<td>"+
             "<p class='my-1'>"+sessionList[j].available_capacity +"</p>"+
             "<p class='my-1'>"+ sessionList[j].vaccine +"</p>"+
+            "<p class='my-1 text-small color-red'>Age "+ sessionList[j].min_age_limit +"+</p>"+
           "</td>"
         }
         for(k=0; k<7-sessionList.length; k++){
@@ -43,7 +44,7 @@ function createCenterListFromJson(centerList){
             var sessionList = centerList[i].sessions;
               for(j=0; j<sessionList.length; j++){
                 content +=  "<tr><td width='33%'>"+sessionList[j].date  +"</td>" +
-                            "<td width='33%'>"+ sessionList[j].available_capacity +"</td>" +
+                            "<td width='33%'>"+ sessionList[j].available_capacity +"<span class='text-small color-red'> (Age "+ sessionList[j].min_age_limit +"+)</span></td>" +
                             "<td width='33%'>"+ sessionList[j].vaccine +"</td>" +
                 "</tr>"
               }
@@ -57,6 +58,7 @@ function createCenterListFromJson(centerList){
 }
 
 function createCenterListForSearchResult(centerList){
+  console.log(centerList)
   if(centerList.length == 0){
     alert("No data available")
   }
@@ -72,7 +74,8 @@ function createCenterListForSearchResult(centerList){
             "<p class='my-1'>"+ centerList[i].name +"</p>"+
             "<p class='my-1'> <span>"+ centerList[i].block_name +"-<span>"+
             "<span>"+ centerList[i].pincode +"</span></p>" +
-            "<p class='my-1'>"+ centerList[i].fee_type +"</p>" +
+            "<p class='my-1'> <span>"+ centerList[i].fee_type +"<span>"+
+            "<span class='text-small color-red'> Age "+ centerList[i].min_age_limit +" +</span></p>" +
         "</div></td>" +
           "<td><div>"+
             "<p class='my-1'>"+ centerList[i].date +"</p>"+
@@ -102,7 +105,8 @@ function createCenterListForSearchResult(centerList){
               "<p class='my-1'>"+ centerList[i].name +"</p>"+
               "<p class='my-1'> <span>"+ centerList[i].block_name +"-<span>"+
               "<span>"+ centerList[i].pincode +"</span></p>" +
-              "<p class='my-1'>"+ centerList[i].fee_type +"</p>" +
+              "<p class='my-1'> <span>"+ centerList[i].fee_type +"<span>"+
+              "<span class='text-small color-red'> Age "+ centerList[i].min_age_limit +" +</span></p>" +
             "</div></th></thead>" +
 
             "<tbody>" +

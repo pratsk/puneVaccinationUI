@@ -36,7 +36,12 @@ h2 a {
 .yellow {
   color: #fff842;
 }
-
+.text-small{
+  font-size: 11px;
+} 
+.color-red{
+  color: red;
+}
 .my-1{
     margin-top:1px;
     margin-bottom:1px;
