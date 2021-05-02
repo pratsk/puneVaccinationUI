@@ -58,7 +58,6 @@ function createCenterListFromJson(centerList){
 }
 
 function createCenterListForSearchResult(centerList){
-  console.log(centerList)
   if(centerList.length == 0){
     alert("No data available")
   }
